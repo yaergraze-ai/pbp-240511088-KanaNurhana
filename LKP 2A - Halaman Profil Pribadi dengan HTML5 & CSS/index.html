@@ -2,82 +2,149 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Halaman profil mahasiswa Teknik Informatika Universitas Muhammadiyah Cirebon untuk LKP 2A.">
-  <title>Profil - Kana Nurhana | LKP 2A</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Profil Kana Nurhana, mahasiswa Teknik Informatika Universitas Muhammadiyah Cirebon.">
+  <title>Kana Nurhana — Profil Mahasiswa | LKP 2A</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#konten">Langsung ke konten</a>
+  <a class="skip-link" href="#konten">Lewati navigasi</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-  <header class="hero" id="atas">
-    <div class="hero-inner">
-      <p class="eyebrow">LKP 2A · PEMROGRAMAN BERBASIS PLATFORM</p>
-      <!-- Ganti assets/foto.jpg dengan foto/ilustrasi profil yang ingin digunakan. -->
-      <img src="assets/foto.jpg" alt="Ilustrasi sementara untuk foto profil Kana Nurhana" class="foto" width="144" height="144">
-      <h1>Kana Nurhana</h1>
-      <p class="subtitle">Mahasiswa S1 Teknik Informatika</p>
-      <p class="university">Universitas Muhammadiyah Cirebon</p>
-      <span class="identity">NIM 240511088 <span aria-hidden="true">·</span> Kelas TI24D</span>
-    </div>
+  <header class="site-header" id="atas">
+    <nav class="nav-shell container" aria-label="Navigasi utama">
+      <a class="logo" href="#beranda" aria-label="Beranda">K<span>N</span><span class="logo-dot">.</span></a>
+      <div class="nav-links">
+        <a href="#beranda" class="nav-link is-active" aria-current="page">Beranda</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#keahlian" class="nav-link">Keahlian</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false" title="Ganti tema">
+        <span id="theme-icon" aria-hidden="true">☾</span>
+      </button>
+    </nav>
   </header>
 
-  <nav class="navigation" aria-label="Navigasi profil">
-    <div class="nav-inner">
-      <a class="brand" href="#atas" aria-label="Kembali ke atas">KN<span>.</span></a>
-      <div class="nav-links">
-        <a href="#tentang">Tentang</a>
-        <a href="#keahlian">Keahlian</a>
-        <a href="#kontak">Kontak</a>
-      </div>
-    </div>
-  </nav>
+  <main id="konten">
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> STUDENT PORTFOLIO / 2026</p>
+          <p class="greeting">Halo, selamat datang.</p>
+          <h1 id="hero-title">Saya <span class="name-gradient">Kana<br>Nurhana.</span></h1>
+          <p class="hero-description">Mahasiswa Teknik Informatika yang sedang belajar membangun pengalaman digital melalui <strong>Web, Desktop, dan Mobile.</strong></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#tentang">Kenali saya <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="https://github.com/yaergraze-ai" target="_blank" rel="noopener noreferrer">Lihat GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta"><span class="status-dot" aria-hidden="true"></span><span>Belajar, bereksperimen, dan terus berkembang.</span></div>
+        </div>
 
-  <main id="konten" class="main-content">
-    <section id="tentang" class="section" aria-labelledby="judul-tentang">
-      <div class="section-heading">
-        <span class="section-number">01 / PROFIL</span>
-        <h2 id="judul-tentang">Tentang Saya</h2>
-      </div>
-      <div class="about-panel">
-        <p>Saya adalah mahasiswa Program Studi S1 Teknik Informatika di Universitas Muhammadiyah Cirebon. Saya tertarik mempelajari pengembangan aplikasi berbasis web, desktop, dan mobile.</p>
-        <p>Melalui mata kuliah Pemrograman Berbasis Platform, saya belajar memahami perbedaan teknologi dan membangun antarmuka yang terstruktur, rapi, serta mudah digunakan.</p>
+        <div class="hero-visual" aria-label="Kartu identitas mahasiswa">
+          <div class="visual-grid" aria-hidden="true"></div>
+          <div class="visual-orbit visual-orbit-one" aria-hidden="true"></div>
+          <div class="visual-orbit visual-orbit-two" aria-hidden="true"></div>
+          <div class="portrait-card">
+            <div class="portrait-topline"><span>PROFILE / 01</span><span class="topline-symbol" aria-hidden="true">✳</span></div>
+            <div class="portrait-frame">
+              <!-- Ganti aset ini dengan foto profil yang diizinkan, jika diperlukan. -->
+              <img src="assets/foto.jpg" alt="Gambar avatar sementara untuk profil Kana Nurhana" width="480" height="480" class="portrait-image">
+            </div>
+            <div class="portrait-caption">
+              <div><span class="portrait-label">NAMA MAHASISWA</span><h2>Kana Nurhana</h2></div>
+              <span class="caption-star" aria-hidden="true">✦</span>
+            </div>
+            <div class="portrait-details"><span>Teknik Informatika</span><span>UMC · 2026</span></div>
+          </div>
+          <div class="floating-note floating-note-left" aria-hidden="true"><span>01 / WEB</span><strong>HTML · CSS</strong></div>
+          <div class="floating-note floating-note-right" aria-hidden="true"><span>LEARNING</span><strong>✳ &nbsp; EVERY DAY</strong></div>
+        </div>
       </div>
     </section>
 
-    <section id="keahlian" class="section" aria-labelledby="judul-keahlian">
-      <div class="section-heading">
-        <span class="section-number">02 / TEKNOLOGI</span>
-        <h2 id="judul-keahlian">Keahlian yang Dipelajari</h2>
-        <p>Beberapa bahasa dan teknologi yang sedang saya pelajari.</p>
+    <section class="identity-strip" aria-label="Identitas akademik">
+      <div class="container identity-grid">
+        <div class="identity-item"><span>Nama</span><strong>Kana Nurhana</strong></div>
+        <div class="identity-item"><span>NIM</span><strong>240511088</strong></div>
+        <div class="identity-item"><span>Kelas</span><strong>TI24D</strong></div>
+        <div class="identity-item"><span>Kampus</span><strong>UM Cirebon</strong></div>
       </div>
-      <ul class="cards" aria-label="Daftar teknologi">
-        <li class="card"><span class="card-index">01</span><h3>HTML &amp; CSS</h3><p>Struktur dan tampilan halaman web.</p></li>
-        <li class="card"><span class="card-index">02</span><h3>JavaScript</h3><p>Interaktivitas pada aplikasi web.</p></li>
-        <li class="card"><span class="card-index">03</span><h3>Java</h3><p>Dasar pemrograman dan aplikasi desktop.</p></li>
-        <li class="card"><span class="card-index">04</span><h3>Kotlin</h3><p>Pengenalan pengembangan Android.</p></li>
-      </ul>
     </section>
 
-    <section id="kontak" class="section" aria-labelledby="judul-kontak">
-      <div class="section-heading">
-        <span class="section-number">03 / KONTAK</span>
-        <h2 id="judul-kontak">Hubungi Saya</h2>
+    <section class="section about-section container" id="tentang" aria-labelledby="about-title">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow section-kicker">01 — ABOUT ME</p>
+        <h2 id="about-title" class="section-title">Lebih dari sekadar <em>menulis kode.</em></h2>
       </div>
-      <div class="contact-panel">
-        <p>Temukan proyek dan latihan pemrograman saya melalui GitHub.</p>
-        <ul class="contact-list">
-          <li><span>Email (contoh)</span><a href="mailto:email@example.com">email@example.com</a></li>
-          <li><span>GitHub</span><a href="https://github.com/yaergraze-ai" target="_blank" rel="noopener noreferrer">github.com/yaergraze-ai</a></li>
+      <div class="about-layout">
+        <div class="about-story" data-reveal>
+          <p class="lead">Saya tertarik pada bagaimana sebuah ide dapat diubah menjadi aplikasi yang bermanfaat dan mudah digunakan.</p>
+          <p>Saat ini saya menempuh pendidikan S1 Teknik Informatika di Universitas Muhammadiyah Cirebon. Saya mempelajari dasar pengembangan lintas platform, dari halaman web hingga aplikasi desktop dan mobile.</p>
+          <p>Halaman ini dibuat sebagai bagian dari <strong>LKP 2A — Halaman Profil Pribadi dengan HTML5 &amp; CSS</strong>, menggunakan teknologi web tanpa framework.</p>
+        </div>
+        <aside class="about-aside" aria-label="Fokus pembelajaran" data-reveal>
+          <span class="aside-icon" aria-hidden="true">✳</span>
+          <p class="aside-small">SAAT INI SAYA BELAJAR</p>
+          <h3>Merancang, membangun, dan memahami.</h3>
+          <div class="focus-tags"><span>Web Development</span><span>UI Fundamentals</span><span>Cross-Platform</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section skill-section" id="keahlian" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow section-kicker">02 — TECH STACK</p><h2 id="skills-title" class="section-title">Teknologi yang <em>saya pelajari.</em></h2></div>
+          <p class="section-aside">Empat teknologi yang menjadi bagian dari perjalanan belajar saya.</p>
+        </div>
+        <ul class="skills-grid">
+          <li class="skill-card" data-reveal><div class="skill-top"><span class="skill-symbol symbol-html" aria-hidden="true">&lt;/&gt;</span><span class="skill-index">01</span></div><h3>HTML &amp; CSS</h3><p>Struktur semantik dan tampilan halaman web yang rapi dan nyaman dibaca.</p><span class="skill-tag">WEB FOUNDATION</span></li>
+          <li class="skill-card" data-reveal><div class="skill-top"><span class="skill-symbol symbol-js" aria-hidden="true">JS</span><span class="skill-index">02</span></div><h3>JavaScript</h3><p>Menambahkan interaksi sederhana dan perilaku dinamis pada halaman.</p><span class="skill-tag">INTERACTIVITY</span></li>
+          <li class="skill-card" data-reveal><div class="skill-top"><span class="skill-symbol symbol-java" aria-hidden="true">{ }</span><span class="skill-index">03</span></div><h3>Java</h3><p>Mempelajari konsep pemrograman serta menjalankan program desktop.</p><span class="skill-tag">PROGRAMMING</span></li>
+          <li class="skill-card" data-reveal><div class="skill-top"><span class="skill-symbol symbol-kotlin" aria-hidden="true">K</span><span class="skill-index">04</span></div><h3>Kotlin</h3><p>Mengenal ekosistem pengembangan aplikasi mobile berbasis Android.</p><span class="skill-tag">MOBILE DEVELOPMENT</span></li>
         </ul>
-        <p class="contact-note">Ganti alamat email contoh sebelum tugas dikumpulkan jika ingin menampilkan email.</p>
+      </div>
+    </section>
+
+    <section class="section journey-section container" aria-labelledby="journey-title">
+      <div class="section-heading" data-reveal><div><p class="eyebrow section-kicker">03 — MY APPROACH</p><h2 id="journey-title" class="section-title">Belajar melalui <em>praktik.</em></h2></div></div>
+      <div class="journey-grid">
+        <article class="journey-step" data-reveal><span class="journey-number">01</span><div><h3>Eksplorasi</h3><p>Memahami konsep dan mencoba teknologi baru.</p></div></article>
+        <article class="journey-step" data-reveal><span class="journey-number">02</span><div><h3>Implementasi</h3><p>Mengubah materi menjadi program sederhana yang dapat dijalankan.</p></div></article>
+        <article class="journey-step" data-reveal><span class="journey-number">03</span><div><h3>Evaluasi</h3><p>Memeriksa hasil, memperbaiki kesalahan, dan mendokumentasikan proses.</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="kontak" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy" data-reveal>
+          <p class="eyebrow contact-kicker">04 — LET'S CONNECT</p>
+          <h2 id="contact-title">Terus belajar.<br><em>Terus berkarya.</em></h2>
+          <p>Temukan latihan dan proyek pemrograman saya di GitHub.</p>
+          <div class="contact-actions"><a class="button button-white" href="https://github.com/yaergraze-ai" target="_blank" rel="noopener noreferrer">Kunjungi GitHub <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="contact-panel" data-reveal>
+          <span class="contact-panel-label">KONTAK &amp; IDENTITAS</span>
+          <dl>
+            <div><dt>Nama</dt><dd>Kana Nurhana</dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/yaergraze-ai" target="_blank" rel="noopener noreferrer">@yaergraze-ai</a></dd></div>
+            <div><dt>Email (contoh)</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd></div>
+            <div><dt>Pendidikan</dt><dd>S1 Teknik Informatika · UMC</dd></div>
+          </dl>
+          <p class="sample-note">Alamat email di atas masih contoh dari modul, bukan alamat email pribadi.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2026 Kana Nurhana. LKP 2A · Pemrograman Berbasis Platform.</p>
-    <a href="#konten">Kembali ke konten ↑</a>
-  </footer>
+  <footer class="site-footer"><div class="container footer-inner">
+    <a href="#beranda" class="footer-logo" aria-label="Kembali ke beranda">KN<span>.</span></a>
+    <p>© <span id="tahun">2026</span> Kana Nurhana · Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+    <a class="back-top" href="#atas">Ke atas ↑</a>
+  </div></footer>
 </body>
 </html>
