@@ -1,0 +1,6 @@
+# Abaikan hasil kompilasi Java
+*.class
+
+# File sementara sistem operasi
+Thumbs.db
+.DS_Store
