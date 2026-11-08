@@ -1,4 +1,4 @@
-# Analisis Platform Web, Desktop, dan Mobile
+# Lkp 1 — Analisis Platform Web, Desktop, dan Mobile
 
 **Nama:** Kana Nurhana  
 **NIM:** 240511088  

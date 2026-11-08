@@ -1,4 +1,4 @@
-# Refleksi Diri
+# Lkp 1 — Refleksi Diri
 
 **Nama:** Kana Nurhana  
 **NIM:** 240511088  
