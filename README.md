@@ -14,7 +14,7 @@ Folder menggunakan kode dan judul LKP pada modul agar kode, laporan, dan screens
 |---|---|---|---|
 | [LKP 1](LKP%201%20-%20Setup%20Environment%20%26%20Eksplorasi%20Platform/README.md) | Pertemuan 1 | Setup Environment & Eksplorasi Platform | Sudah dikerjakan |
 | [LKP 2A](LKP%202A%20-%20Halaman%20Profil%20Pribadi%20dengan%20HTML5%20%26%20CSS/) | Pertemuan 2 | Halaman Profil Pribadi dengan HTML5 & CSS | HTML/CSS siap; menunggu uji dan screenshot |
-| [LKP 2B](LKP%202B%20-%20Membuat%20Halaman%20Profil%20Responsif/README.md) | Pertemuan 3 | Membuat Halaman Profil Responsif | Belum dikerjakan |
+| [LKP 2B](LKP%202B%20-%20Membuat%20Halaman%20Profil%20Responsif/) | Pertemuan 3 | Membuat Halaman Profil Responsif | Kode siap; screenshot pengujian belum dilengkapi |
 | [LKP 3A](LKP%203A%20-%20Aplikasi%20To-Do%20List%20dengan%20JavaScript%20Murni/README.md) | Pertemuan 4 | Aplikasi To-Do List dengan JavaScript Murni | Belum dikerjakan |
 | [LKP 3B](LKP%203B%20-%20Konversi%20To-Do%20List%20ke%20React/README.md) | Pertemuan 5 | Konversi To-Do List ke React | Belum dikerjakan |
 | [LKP 4A](LKP%204A%20-%20RESTful%20API%20Sederhana%20dengan%20Express/README.md) | Pertemuan 6 | RESTful API Sederhana dengan Express | Belum dikerjakan |
