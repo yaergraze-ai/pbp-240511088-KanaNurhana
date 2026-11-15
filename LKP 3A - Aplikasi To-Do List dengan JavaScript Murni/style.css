@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --background: #f5f7fb;
+  --surface: #ffffff;
+  --text: #1d2942;
+  --muted: #748099;
+  --line: #e7ecf5;
+  --primary: #335fe0;
+  --primary-dark: #254ac0;
+  --danger: #c94455;
+}
+
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; padding: 56px 18px; background: var(--background); color: var(--text); font-family: "DM Sans", "Segoe UI", sans-serif; line-height: 1.6; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 3px solid #98b4ff; outline-offset: 3px; }
+.app { width: min(100%, 690px); margin: 0 auto; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 24px 70px rgba(29, 41, 66, .055); }
+.app-header { padding: 38px 42px 32px; border-bottom: 1px solid var(--line); background: linear-gradient(120deg, #fff 20%, #f8faff 100%); }
+.eyebrow { color: var(--primary); font-size: 10px; font-weight: 800; letter-spacing: .16em; }
+.heading-row { display: flex; justify-content: space-between; gap: 18px; align-items: center; margin-top: 15px; }
+h1 { margin: 0; font-size: clamp(31px, 5vw, 42px); line-height: 1.18; letter-spacing: -.06em; }
+.accent { color: var(--primary); }
+.subtitle { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+.header-icon { display: grid; flex: 0 0 54px; height: 54px; place-items: center; border-radius: 16px; background: #eaf0ff; color: var(--primary); font-size: 28px; font-weight: 800; }
+.content { padding: 33px 42px 37px; }
+.form-label { display: block; margin-bottom: 10px; font-size: 12px; font-weight: 800; }
+.form-controls { display: flex; gap: 11px; }
+.form-controls input { width: 100%; min-width: 0; height: 48px; flex: 1; padding: 0 15px; border: 1px solid #d9e1ef; border-radius: 10px; background: #fff; color: var(--text); font-size: 13px; }
+.form-controls input::placeholder { color: #a1aab9; }
+.button-add { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 0 18px; border: 0; border-radius: 10px; background: var(--primary); color: #fff; font-size: 12px; font-weight: 800; white-space: nowrap; }
+.button-add:hover { background: var(--primary-dark); }
+.button-add span { font-size: 20px; font-weight: 400; }
+.list-header { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-top: 35px; padding-bottom: 15px; border-bottom: 1px solid var(--line); }
+h2 { margin: 0; font-size: 16px; letter-spacing: -.03em; }
+#stats { margin: 0; color: var(--muted); font-size: 11px; text-align: right; }
+.todo-list { margin: 0; padding: 0; list-style: none; }
+.todo-list li { display: flex; align-items: center; gap: 13px; min-height: 65px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+.todo-list .checkbox { width: 18px; height: 18px; margin: 0; flex: 0 0 18px; accent-color: var(--primary); cursor: pointer; }
+.todo-list .teks { min-width: 0; flex: 1; font-size: 13px; font-weight: 600; overflow-wrap: anywhere; }
+.todo-list .selesai .teks { color: #9aa5b7; text-decoration: line-through; }
+.todo-list .hapus { padding: 7px 11px; border: 1px solid #f6d9de; border-radius: 8px; background: #fff4f5; color: var(--danger); font-size: 11px; font-weight: 800; }
+.todo-list .hapus:hover { background: #fce6e9; }
+.todo-list .empty-state { justify-content: center; min-height: 130px; border-bottom: 0; color: var(--muted); font-size: 13px; text-align: center; }
+.app-footer { padding: 17px 42px; border-top: 1px solid var(--line); background: #fbfcff; color: var(--muted); font-size: 11px; text-align: center; }
+@media (max-width: 560px) {
+  body { padding: 18px 12px; }
+  .app { border-radius: 16px; }
+  .app-header { padding: 29px 22px 25px; }
+  .content { padding: 25px 22px 30px; }
+  .header-icon { flex-basis: 44px; height: 44px; }
+  .form-controls { flex-direction: column; }
+  .button-add { width: 100%; }
+  .list-header { align-items: start; flex-direction: column; gap: 2px; }
+  #stats { text-align: left; }
+  .app-footer { padding: 15px 18px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }

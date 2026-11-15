@@ -15,10 +15,10 @@ Folder menggunakan kode dan judul LKP pada modul agar kode, laporan, dan screens
 | [LKP 1](LKP%201%20-%20Setup%20Environment%20%26%20Eksplorasi%20Platform/README.md) | Pertemuan 1 | Setup Environment & Eksplorasi Platform | Sudah dikerjakan |
 | [LKP 2A](LKP%202A%20-%20Halaman%20Profil%20Pribadi%20dengan%20HTML5%20%26%20CSS/) | Pertemuan 2 | Halaman Profil Pribadi dengan HTML5 & CSS | HTML/CSS siap; menunggu uji dan screenshot |
 | [LKP 2B](LKP%202B%20-%20Membuat%20Halaman%20Profil%20Responsif/) | Pertemuan 3 | Membuat Halaman Profil Responsif | Kode siap; screenshot pengujian belum dilengkapi |
-| [LKP 3A](LKP%203A%20-%20Aplikasi%20To-Do%20List%20dengan%20JavaScript%20Murni/README.md) | Pertemuan 4 | Aplikasi To-Do List dengan JavaScript Murni | Belum dikerjakan |
-| [LKP 3B](LKP%203B%20-%20Konversi%20To-Do%20List%20ke%20React/README.md) | Pertemuan 5 | Konversi To-Do List ke React | Belum dikerjakan |
-| [LKP 4A](LKP%204A%20-%20RESTful%20API%20Sederhana%20dengan%20Express/README.md) | Pertemuan 6 | RESTful API Sederhana dengan Express | Belum dikerjakan |
-| [LKP 4B](LKP%204B%20-%20Integrasi%20API%20dengan%20MongoDB%20Atlas/README.md) | Pertemuan 7 | Integrasi API dengan MongoDB Atlas | Belum dikerjakan |
+| [LKP 3A](LKP%203A%20-%20Aplikasi%20To-Do%20List%20dengan%20JavaScript%20Murni/) | Pertemuan 4 | Aplikasi To-Do List dengan JavaScript Murni | Kode siap; screenshot browser belum ditambahkan |
+| [LKP 3B](LKP%203B%20-%20Konversi%20To-Do%20List%20ke%20React/) | Pertemuan 5 | Konversi To-Do List ke React | Kode siap; menunggu uji React dan screenshot |
+| [LKP 4A](LKP%204A%20-%20RESTful%20API%20Sederhana%20dengan%20Express/README.md) | Pertemuan 6 | RESTful API Sederhana dengan Express | Kode siap; menunggu uji Postman dan screenshot |
+| [LKP 4B](LKP%204B%20-%20Integrasi%20API%20dengan%20MongoDB%20Atlas/README.md) | Pertemuan 7 | Integrasi API dengan MongoDB Atlas | Kode siap; menunggu koneksi Atlas dan screenshot |
 | [LKP 5A](LKP%205A%20-%20Aplikasi%20JavaFX%20Halo%2C%20JavaFX!/README.md) | Pertemuan 9 | Aplikasi JavaFX "Halo, JavaFX!" | Belum dikerjakan |
 | [LKP 5B](LKP%205B%20-%20Aplikasi%20Kalkulator%20JavaFX/README.md) | Pertemuan 10 | Aplikasi Kalkulator JavaFX | Belum dikerjakan |
 | [LKP 6A](LKP%206A%20-%20Aplikasi%20Halo%20Android%20dengan%20Compose/README.md) | Pertemuan 11 | Aplikasi "Halo Android" dengan Compose | Belum dikerjakan |

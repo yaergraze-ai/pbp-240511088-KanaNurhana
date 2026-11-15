@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplikasi To-Do List JavaScript murni dengan penyimpanan localStorage.">
+  <title>To-Do List | LKP 3A</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <span class="eyebrow">LKP 3A · JAVASCRIPT FUNDAMENTALS</span>
+      <div class="heading-row">
+        <div>
+          <h1>To-Do List<span class="accent">.</span></h1>
+          <p class="subtitle">Catat rencana dan selesaikan satu per satu.</p>
+        </div>
+        <span class="header-icon" aria-hidden="true">✓</span>
+      </div>
+    </header>
+    <section class="content" aria-label="Daftar tugas">
+      <form id="form-todo" class="form">
+        <label for="input-todo" class="form-label">Tugas baru</label>
+        <div class="form-controls">
+          <input id="input-todo" name="tugas" type="text" maxlength="140" placeholder="Tulis tugas yang ingin dikerjakan..." autocomplete="off" required>
+          <button type="submit" class="button-add">Tambah <span aria-hidden="true">+</span></button>
+        </div>
+      </form>
+      <div class="list-header">
+        <h2>Daftar tugas</h2>
+        <p id="stats" role="status" aria-live="polite">0 tugas belum selesai</p>
+      </div>
+      <ul id="list-todo" class="todo-list" aria-label="Daftar tugas yang tersimpan"></ul>
+    </section>
+    <footer class="app-footer">Data tersimpan otomatis di browser ini.</footer>
+  </main>
+</body>
+</html>
