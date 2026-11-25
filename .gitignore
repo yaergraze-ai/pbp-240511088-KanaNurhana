@@ -1,6 +1,8 @@
-# Abaikan hasil kompilasi Java
 *.class
-
-# File sementara sistem operasi
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
 Thumbs.db
 .DS_Store
